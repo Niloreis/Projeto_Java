@@ -24,12 +24,34 @@ public class Teste_GerenciadorPetshop {
         boolean saoIguais = cachorro.equals(cachorroComparado);
         System.out.println("\nCachorros iguais? " + saoIguais);
 
-        if (saoIguais) {
-            System.out.println("\n=== Dados dos Animais ===");
-            System.out.println("Cachorro: " + cachorro);
-            System.out.println("Gato: " + gato);
-            System.out.println("Outro Animal: " + outroAnimal);
-        }
+       if (saoIguais) {
+    System.out.println("\n===============================");
+    System.out.println("       DADOS DOS ANIMAIS       ");
+    System.out.println("===============================\n");
+
+    System.out.println(">>> Cachorro");
+    System.out.println("Nome: " + cachorro.getNome());
+    System.out.println("Raça: " + cachorro.getRaca());
+    System.out.println("Idade: " + cachorro.getIdade() + " anos");
+    System.out.println("Dono: " + cachorro.getNomeDono());
+    System.out.println("Porte: " + ((Cachorro) cachorro).getPorte());
+
+    System.out.println("\n>>> Gato");
+    System.out.println("Nome: " + gato.getNome());
+    System.out.println("Raça: " + gato.getRaca());
+    System.out.println("Idade: " + gato.getIdade() + " anos");
+    System.out.println("Dono: " + gato.getNomeDono());
+    System.out.println("Cor dos Olhos: " + ((Gato) gato).getCorOlhos());
+
+    System.out.println("\n>>> Outro Animal");
+    System.out.println("Nome: " + outroAnimal.getNome());
+    System.out.println("Raça: " + outroAnimal.getRaca());
+    System.out.println("Idade: " + outroAnimal.getIdade() + " anos");
+    System.out.println("Dono: " + outroAnimal.getNomeDono());
+    System.out.println("Tipo: " + ((OutroAnimal) outroAnimal).getTipo());
+    
+    System.out.println("\n===============================\n");
+}
 
     }
 }
