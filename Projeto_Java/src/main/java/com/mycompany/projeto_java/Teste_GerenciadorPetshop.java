@@ -20,7 +20,16 @@ public class Teste_GerenciadorPetshop {
         System.out.println("Preço da consulta para gato: " + consulta.calcularPreco(gato));
 
         // Comparação de objetos com equals() e hashCode()
-        System.out.println("\nCachorros iguais? " + cachorro.equals(new Cachorro("Rex", "Labrador", 5, "João", "Grande")));
-        
+        Cachorro cachorroComparado = new Cachorro("Rex", "Labrador", 5, "João", "Grande");
+        boolean saoIguais = cachorro.equals(cachorroComparado);
+        System.out.println("\nCachorros iguais? " + saoIguais);
+
+        if (saoIguais) {
+            System.out.println("\n=== Dados dos Animais ===");
+            System.out.println("Cachorro: " + cachorro);
+            System.out.println("Gato: " + gato);
+            System.out.println("Outro Animal: " + outroAnimal);
+        }
+
     }
 }
